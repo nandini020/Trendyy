@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="stylesheet" href="animate.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.bar1
+{
+background-color:rgb(0, 0, 0);
+color:rgba(46, 204, 113);
+}
+.cc
+{
+color:rgba(46, 204, 113);
+margin-left:150px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.bg-img {
+  background-image: url("f18.jpg");
+
+  height: 92.8%;
+width:100%;
+ 
+  background-repeat: no-repeat;
+  position: relative;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #6666ff;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+<nav class="navbar bar1 navbar-expand-md  navbar-dark fixed-top">
+   <img src="f26.jpg" style="height:10%; width:10%;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link cc" href="fashion.html" style="color:rgb(255, 255, 255);">HOME</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link cc" href="coll.html" style="color:rgb(255, 255, 255);">COLLECTION</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link cc" href="look.html" style="color:rgb(255, 255, 255);">LOOKBOOK</a>
+    </li>
+<li class="nav-item">
+     <a class="nav-link cc" href="testimonial.html" style="color:rgb(255, 255, 255);">TESTIMONIALS</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link cc" href="login.html" style="color:rgb(255, 255, 255);">LOGIN</a>
+    </li>
+</ul>
+</div>
+</nav>
+<br/><br/>
+<div class="bg-img">
+<form action="/action_page.php" style="border:1px solid #ccc"><br/>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+ <!-- Social login -->
+      <p>or sign in with: <br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAAB2CAMAAAAJDgSzAAAAY1BMVEX///86VZ98irkuTZvk5u9CW6JzhLc0UZ0UP5bh5O/q7PRdca5Xbavn6fIzUZ9RaKgoSpvDyuHW2ujy9Pltf7ZMY6YeQ5elr86HlL/L0OT4+fy1vdeut9QMO5Whq82QnMQANZJK6p8BAAACCklEQVR4nO3dWY+CMBQFYGrFsogUWWSRcf7/r5xkXlhaaRyShnvnnFf1JJ+CyEVtECD2JGffSTwLTyL0G3HyLdTCb7R3ofQslBBCCCGEEEIIIYQQQgjh/qh1GAmV1CKs81VqNkLVhO2ji8t+meC+Pv+kKmzEcO5t/UyEOn++6+chjNr30yUWQvn2BQx4CGW31c9A2Ayb/fSFemsTDRgI5cV6jJhCXji6ZvTUhc2Xq5+4UNVnVz9xoX45+4kL1eah8De0hSp0vJEG1IXyYu/syykdaaG2vpMmj7aakhpPCyVhVFgKu1rL2xTaU4zxbvYVjWEiLIxis0/eHA+iLhwi14OoC1tnHXXhxbWR0hfyfw0hhBBCCCGEEEL6wuUF7NEi1I6L3EcX5uk8YWbUtdd0GWJXudWQzGMCgzJZpnyt+48tvNnGFtsxdkx2wnq9J7ITGuf83ITlN3dhPHIXFg134ZfxkxxuQrOem7AiNtX/WNin3IWZ8bGUm/AechcW1M6ePhY+zd9vMhOah0NuwpaaUD2TbBbL954Xt2dxZV6KOrZQ1Nd5bFOMfHEPS8XBhcI1iark9hzq+MJFOE4TIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCH858Idqz/8Seh/9YcdK3ho83+w3HXeV/DYswpLbPnm3vFWYaGTH27fTzWSVJe6AAAAAElFTkSuQmCC" height=20px width=40px>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLU2kfPp4l2ho-VtoKuGI8dN4geEp5mYlOvg&usqp=CAU" height=20px width=30px>
+    <i class="fab fa-google"></i>
+	<i class="fab fa-facebook"></i>
+
+  </div>
+</div>
+</form>
+
+
+
+
+</body>
+</html>
